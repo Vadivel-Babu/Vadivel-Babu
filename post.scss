@@ -1,0 +1,161 @@
+@import "./style.scss";
+
+.posts{
+    width: 100%;
+   
+    .post-container{
+      width: 50%;
+     
+   
+      margin: 1rem auto;
+    //   .post{
+        
+    //     height: 100%;
+    //     background-color: $secondary-color;
+    //     position: relative;
+       
+    //   }
+      .post1{
+        height: 35rem;
+        width: 40rem;
+        background-color: #e6e6e6a2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+        .image{
+            width: 50%;
+            height: 50%;
+            position: relative;
+            
+          
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &.skeleton::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform: translateX(-100%);
+                background-image: linear-gradient(
+                  90deg,
+                  rgba(#fff, 0) 0,
+                  rgba(#fff, 0.2) 20%,
+                  rgba(#fff, 0.5) 60%,
+                  rgba(#fff, 0)
+                );
+                animation: shimmer 2s linear infinite;
+                content: '';
+              }
+        }
+        .content{
+            padding: 1rem;
+            width: 90%;
+            height: 30%;
+            text-align: justify;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .profile{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .right{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    .profile-img{
+                        height: 4rem;
+                        width:4rem;
+                        border-radius: 50%;
+                        background-color: black;
+
+                        .photo{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            .output{
+                width: 100%;
+            }
+            .text{
+                width: 90%;
+                display: none;
+                height: 10%;
+                margin-bottom: 0.2rem;
+                position: relative;
+                background-color: #6f6f7a;
+                &:last-child{
+                    width: 50%;
+                    position: relative;
+                }
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateX(-100%);
+                    background-image: linear-gradient(
+                      90deg,
+                      rgba(#fff, 0) 0,
+                      rgba(#fff, 0.2) 20%,
+                      rgba(#fff, 0.5) 60%,
+                      rgba(#fff, 0)
+                    );
+                    animation: shimmer 2s linear infinite;
+                    content: '';
+                  }
+            }
+        }
+        .comment{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: 5%;
+            &.skeleton::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform: translateX(-100%);
+                background-image: linear-gradient(
+                  90deg,
+                  rgba(#fff, 0) 0,
+                  rgba(#fff, 0.2) 20%,
+                  rgba(#fff, 0.5) 60%,
+                  rgba(#fff, 0)
+                );
+                animation: shimmer 2s linear infinite;
+                content: '';
+              }
+              .comments{
+                a{
+                    font-size: 1.2rem;
+                    color: rgb(99, 99, 99);
+                    text-decoration: none;
+                    margin-right: 0.2rem;
+                }
+              }
+              
+        }
+      }
+      
+    }
+}
