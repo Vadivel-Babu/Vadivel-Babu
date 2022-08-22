@@ -18,6 +18,9 @@ let  end = document.querySelector(".end");
 let photo = document.querySelector('.photo')
 let username = document.querySelector('.username')
 let date = document.querySelector('.date')
+let post = document.querySelector('.post-container')
+let section = document.querySelector('.posts')
+console.log(post)
 
 async function fetchAPI(url) {
     const response = await fetch(url);
@@ -46,9 +49,9 @@ async function fetchUser(url){
        photo.src = response_json.results[0].picture.medium
        username.textContent = response_json.results[0].name.first +" " +response_json.results[0].name.last
        let Setdate = response_json.results[0].registered.date
-       console.log(typeof Setdate)
-       console.log(Setdate.toLocaleString())
-     console.log(response_json.results[0])
+    //    console.log(typeof Setdate)
+    //    console.log(Setdate.toLocaleString())
+    //  console.log(response_json.results[0])
     }
 }
 
@@ -59,14 +62,18 @@ async function fetchUser(url){
 };
 
 load()
-window.onscroll = newPost;
 
-function newPost(){
-    if (end.offsetTop < window.pageYOffset + window.innerHeight) {
-    //    addNewPost()
-      }
-
+function newPosts(){
+    let postCopy = post.cloneNode(true);
+    section.appendChild(postCopy)
+    console.log(postCopy)
 }
+
+const observer = new IntersectionObserver(entries => {
+    console.log(entries)
+})
+observer.observe(section)
+
 function addNewPost(){
     for(let i= 0;i < 2;i++){
         fetchAPI('https:\/\/dog.ceo/api/breeds/image/random');
@@ -76,6 +83,6 @@ function addNewPost(){
 
 
 
-newPost();
+
 
 
