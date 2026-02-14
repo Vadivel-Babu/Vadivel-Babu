@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Laravel**
 
-- 💬 Ask me about **react,express,node,mongoDB,sql**
+- 💬 Ask me about **react,php,node,mongoDB,sql**
 
 - 📫 How to reach me **vadivel1893@gmail.com**
 
