@@ -3,9 +3,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vadivel-babu&label=Profile%20views&color=0e75b6&style=flat" alt="vadivel-babu" /> </p>
 
-- 🌱 I’m currently learning **Laravel**
+- 🌱 I’m currently learning **Docker**
 
-- 💬 Ask me about **react,php,typescript,sql**
+- 💬 Ask me about **react,php,typescript,laravel,sql**
 
 - 📫 How to reach me **vadivel1893@gmail.com**
 
