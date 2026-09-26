@@ -3,11 +3,12 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=vadivel-babu&label=Profile%20views&color=0e75b6&style=flat" alt="vadivel-babu" /> </p>
 
-- 🌱 I’m currently learning **Docker**
+- 🌱 I’m currently learning **Docker and cloud (GCP)**
 
 - 💬 Ask me about **react,php,typescript,laravel,sql**
 
 - 📫 How to reach me **vadivel1893@gmail.com**
+- My Portfolio <a href="https://vadivelbabu.in" target="blank">link</a>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
